@@ -2,14 +2,14 @@
 
 This is my showcase website
 
-### Technologies used : 
+## Technologies used : 
 
+### FrontEnd
+- Javascript 
 - React 
 
+### Backend
 - Nodejs
-
+- Express
 - Docker 
-
 - AmazonWebServices(EC2)
-
-- Javascript 

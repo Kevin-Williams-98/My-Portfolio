@@ -7,5 +7,7 @@ COPY package.json .
 RUN npm install 
 # Copy everything to working dir
 COPY . .
+# Need to expose a port to listen 
+EXPOSE 5000
 # Need to execute npm run start application
 CMD ["npm","start"]
