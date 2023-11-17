@@ -13,6 +13,4 @@ This is my showcase website
 ### Backend
 - Nodejs
 - Express
-- Docker 
-- AmazonWebServices(EC2)
 
