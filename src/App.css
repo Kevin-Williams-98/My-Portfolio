@@ -234,7 +234,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/dark-street-bg.jpeg');
+  background-color: #000;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -283,6 +283,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 25px;
 }
 .banner img {
+  border-radius: 20px;
   animation: updown 3s linear infinite;
 }
 @keyframes updown {
@@ -306,7 +307,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 .skill-bx {
-  background: #151515;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
@@ -331,12 +331,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill-slider .item img {
   width: 50%;
   margin: 0 auto 15px auto;
+  border-radius: 20px;
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
 }
-.background-image-left {
-  top: 28%;
+.background-image-skills {
+ 
   position: absolute;
   bottom: 0;
-  width: 40%;
+ 
   z-index: -4;
 }
 
@@ -468,8 +472,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .contact {
-  background: rgba();
-  padding: 60px 0 200px 0;
+
+  background-image: url('./assets/img/miami.jpg');
+  padding: 60px 0px 200px 0px;
+  background-size: cover; /* Scale the image to cover the entire container */
+  background-position: center; /* Center the image within the container */
+  background-repeat: no-repeat; 
 }
 .contact img {
   width: 92%;
@@ -541,7 +549,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Footer Css ************/
 .footer {
   padding: 0 0 50px 0;
-  background-image: url('./assets/img/dark-street-bg.jpeg');
+background-color: #000;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -616,3 +624,4 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+/************ Coming soon Css ************/

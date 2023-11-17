@@ -32,7 +32,7 @@ export const Skills = () => {
         <div className="container">
             <div className="row">
                 <div className="col-12">
-                    <div className="skill-bx wow zoomIn">
+                    <div className="skill-bx">
                         <h2>Skills</h2>
                         <p><br></br></p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
@@ -57,7 +57,7 @@ export const Skills = () => {
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={background} alt="Image" />
+        <img className="background-image-skills" src={background} alt="Image" />
     </section>
   )
 }

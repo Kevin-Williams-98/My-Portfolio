@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const cors = require("cors");
 const nodemailer = require("nodemailer");
-//console.log(hello)
+
 // server used to send send emails
 const app = express();
 app.use(cors());
@@ -15,8 +15,8 @@ console.log(process.env.EMAIL_PASS);
 const contactEmail = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: "********@gmail.com",
-    pass: ""
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS
   },
 });
 
@@ -29,6 +29,7 @@ contactEmail.verify((error) => {
 });
 
 router.post("/contact", (req, res) => {
+  console.log(req);
   const name = req.body.firstName + req.body.lastName;
   const email = req.body.email;
   const message = req.body.message;
@@ -49,4 +50,14 @@ router.post("/contact", (req, res) => {
       res.json({ code: 200, status: "Message Sent" });
     }
   });
+});
+
+router.get('/health', (req, res) => {
+console.log('health');
+  const serverStatus = {
+    status: 'UP',
+    message: 'Server is healthy'
+  };
+
+  res.json(serverStatus);
 });
