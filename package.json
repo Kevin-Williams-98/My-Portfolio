@@ -30,9 +30,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "concurrently \"nodemon -r dotenv/config server.js\" \"react-scripts start" ,
-    "start2": "react-scripts start ",
-    "build": "react-scripts build",
+    "start2": "concurrently \"nodemon -r dotenv/config server.js\" \"react-scripts start" ,
+    "start": "react-scripts start ",
+    "build": "nodemon -r dotenv/config server.js react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server-test": "nodemon -r dotenv/config server.js",
