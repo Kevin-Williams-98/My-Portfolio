@@ -34,7 +34,6 @@ export default function Contact() {
 
     setButtonText('Send');
     const result = await response;
-    console.log(result);
     setFormDetails(formInitialDetails);
     if (result.data.code === 200) {
       setStatus({ succes: true, message: 'Message sent successfully' });
