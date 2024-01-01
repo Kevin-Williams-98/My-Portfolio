@@ -14,3 +14,7 @@ This is my showcase website
 - Nodejs
 - Express
 
+
+### List of things that need to be fixed
+-  Mailing
+- 

@@ -9,9 +9,13 @@
     "animate.css": "^4.1.1",
     "axios": "^1.6.2",
     "bootstrap": "^5.1.3",
+    "concurrently": "^8.2.2",
     "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
     "express": "^4.18.1",
-    "nodemailer": "^6.7.5",
+    "nodemailer": "^6.9.8",
+    "nodemon": "^3.0.2",
+    "prop-types": "^15.8.1",
     "react": "^18.1.0",
     "react-bootstrap": "^2.4.0",
     "react-bootstrap-icons": "^1.8.2",
@@ -22,15 +26,17 @@
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.3.0",
     "react-router-hash-link": "^2.4.3",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"nodemon -r dotenv/config server.js\" \"react-scripts start" ,
+    "start2": "react-scripts start ",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server-test":"node server.js"
+    "server-test": "nodemon -r dotenv/config server.js",
+    "lint-fix": "eslint --fix ./src"
   },
   "eslintConfig": {
     "extends": [
@@ -49,5 +55,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^8.54.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "3.1.0"
   }
 }
