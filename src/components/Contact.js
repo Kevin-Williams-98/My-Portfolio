@@ -28,7 +28,7 @@ export default function Contact() {
     e.preventDefault();
     setButtonText('Sending...');
     const response = await axios.post(
-      'http://localhost:3000/api/server',
+      'https://kevinwilliamsportfolio.com/api/server',
       formDetails,
     );
 
