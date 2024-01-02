@@ -28,7 +28,7 @@ export default function Contact() {
     e.preventDefault();
     setButtonText('Sending...');
     const response = await axios.post(
-      'http://localhost:5000/contact',
+      'http://localhost:3000/api/server',
       formDetails,
     );
 
