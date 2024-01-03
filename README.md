@@ -12,9 +12,9 @@ This is my showcase website
 
 ### Backend
 - Nodejs
-- Express
+- Vercel
 
 
 ### List of things that need to be fixed
--  Mailing
-- 
+- About me section
+- Add projects
