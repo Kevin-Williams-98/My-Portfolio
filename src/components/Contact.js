@@ -28,7 +28,7 @@ export default function Contact() {
     e.preventDefault();
     setButtonText('Sending...');
     const response = await axios.post(
-      '/api/server',
+      'https://my-portfolio-git-master-kevin-williams-98s-projects.vercel.app/api/server',
       formDetails,
     );
 
