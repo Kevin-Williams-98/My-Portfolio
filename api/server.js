@@ -49,7 +49,3 @@ export default function handler(request, response) {
     });
   });
 }
-
-export function healthCheck(request, response) {
-  return response.json({ code: 200, status: 'Health is good' });
-}

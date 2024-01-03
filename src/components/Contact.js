@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-//import axios from 'axios';
+import axios from 'axios';
 import TrackVisibility from 'react-on-screen';
 import contactImg from '../assets/img/contact-img.svg';
 import 'animate.css';
-import { healthCheck } from '../../api/server';
 
 export default function Contact() {
   const formInitialDetails = {
@@ -28,11 +27,10 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText('Sending...');
-    /*const response = await axios.post(
+    const response = await axios.post(
       '/api/server',
       formDetails,
-    );*/
-    const response = healthCheck();
+    );
 
     setButtonText('Send');
     const result = await response;
