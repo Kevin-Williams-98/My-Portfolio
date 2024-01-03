@@ -21,12 +21,12 @@ export default function handler(request, response) {
     if (error) {
       return response.status(401).json({ text: 'Email is not authenticated' });
     }
-
+    /*
     // Set CORS headers in the response
     response.setHeader('Access-Control-Allow-Origin', 'https://kevinwilliamsportfolio.com/'); // Replace * with specific origins
     response.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
     response.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-
+*/
     const name = `${request.body.firstName} ${request.body.lastName}`;
     const { email } = request.body;
     const { message } = request.body;
